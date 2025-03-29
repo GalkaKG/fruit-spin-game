@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.slot-machine {
+    display: grid;
+    gap: 5px;
+    padding: 20px;
+    background: #333;
+    border: 5px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gold;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reel {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    background: gold;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: orange;
+}
+
+#message {
+    margin-top: 12px;
+}
+
+
+/* Spin animation */
+
+.reel {
+    transition: transform 0.05s ease-out;
+    display: inline-block;
+}
+
+@keyframes quickShake {
+    0% { transform: translateY(-2px) rotate(-2deg); }
+    50% { transform: translateY(2px) rotate(2deg); }
+    100% { transform: translateY(-2px) rotate(-2deg); }
+}
+
+.reel.spinning {
+    animation: quickShake 0.05s infinite;
+}
