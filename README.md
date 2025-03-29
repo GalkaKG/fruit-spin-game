@@ -33,6 +33,4 @@ A simple fruit slot game powered by **FastAPI** for the backend and **HTML/CSS**
 
 4. Open your browser and go to ``http://localhost:8000`` to play the game!
 
-## This is how it looks:
-
 <img src="https://res.cloudinary.com/drgmy2cuw/image/upload/v1743240172/fruit-game_jjq6z8.png">
