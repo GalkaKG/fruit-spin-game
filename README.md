@@ -1,4 +1,4 @@
-# Spin Fruit Game 🍒🍋🍊
+# Fruit Spin Game 🍒🍋🍊
 
 A simple fruit slot game powered by **FastAPI** for the backend and **HTML/CSS** for the frontend. Spin the reels and see if you can win!
 
